@@ -1,0 +1,36 @@
+--Variables
+local ts = game:GetService("TeleportService")
+local p = game:GetService("Players").LocalPlayer
+
+--Function
+function indentity()
+printidentity()
+return printer
+end
+
+function Kick()
+game.Players.LocalPlayer:Kick("Used Kick Function")
+return Kick
+end
+
+function IY()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/AnderoExploiter/FunctionsWave/refs/heads/main/IY.lua'))()
+return IY
+end
+
+function DEX()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnderoExploiter/FunctionsWave/refs/heads/main/DEX.lua"))()
+return DEX
+end
+
+function rejoin()
+
+ts:Teleport(game.PlaceId, p)
+
+return rejoin
+end
+
+function reset()
+Game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Dead)
+return reset
+end
