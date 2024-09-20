@@ -4,6 +4,7 @@ indentity()
 IY()
 DEX()
 rejoin()
-reset()**
+reset()
+UNC()**
 
 **Enter loadstring after use function!**
