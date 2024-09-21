@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supported Injectors</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            background: linear-gradient(-45deg, #0000FF, #000000, #FF00FF, #00FFFF);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .fixed-text {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: white; /* Белый фон */
+            color: black; /* Черный текст */
+            border: none;
+            cursor: pointer;
+            border-radius: 15px; /* Закругленные углы */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .back-button:hover {
+            background-color: rgba(255, 255, 255, 0.8); /* Светлый фон при наведении */
+        }
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="goBack()">Back</button>
+    
+    <h1>Supported Injectors</h1>
+    
+    <table id="injectorsTable">
+        <thead>
+            <tr>
+                <th>Injectors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Wave</td>
+            </tr>
+            <tr>
+                <td>Solara</td>
+            </tr>
+            <tr>
+                <td>Synapse Z</td>
+            </tr>
+            <tr>
+                <td>Nezur</td>
+            </tr>
+            <tr>
+                <td>Scylex</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="fixed-text">© WaveFunctions 2024</div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
