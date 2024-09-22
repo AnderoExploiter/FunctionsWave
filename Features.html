@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to use</title>
+    <style>
+        body {
+            height: 100vh; /* Высота на весь экран */
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Центрируем содержимое по горизонтали */
+            align-items: center; /* Центрируем содержимое по вертикали */
+            background: linear-gradient(-45deg, #0000FF, #000000, #FF00FF, #00FFFF); /* Градиентный фон */
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite; /* Анимация градиента */
+            font-family: Arial, sans-serif; /* Шрифт */
+            position: relative; /* Для позиционирования кнопки */
+            padding: 20px; /* Отступы вокруг содержимого */
+            box-sizing: border-box; /* Учитываем отступы в высоте */
+        }
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .features-description {
+            text-align: center; /* Центрируем текст */
+            max-width: 600px; /* Максимальная ширина блока */
+            padding: 20px; /* Отступы */
+            background: transparent; /* Убрали фон, чтобы использовать градиент */
+            border: 5px solid white; /* Бортик в 5 пикселей */
+            border-radius: 10px; /* Закругленные углы */
+            color: white; /* Цвет текста */
+            margin-bottom: 20px; /* Отступ снизу */
+        }
+        .back-button {
+            position: absolute; /* Абсолютное позиционирование */
+            top: 20px; /* Отступ сверху */
+            right: 20px; /* Отступ справа */
+            padding: 10px 15px; /* Отступы кнопки */
+            background-color: white; /* Фон кнопки */
+            color: black; /* Цвет текста кнопки */
+            border: none; /* Убрали границу */
+            border-radius: 20px; /* Закругленные углы кнопки */
+            cursor: pointer; /* Курсор при наведении */
+            font-size: 16px; /* Размер шрифта */
+        }
+        .footer-text {
+            position: fixed; /* Фиксированное позиционирование */
+            bottom: 10px; /* Отступ снизу */
+            left: 10px; /* Отступ слева */
+            color: white; /* Цвет текста */
+            font-weight: bold; /* Жирный шрифт */
+            z-index: 1000; /* Убедимся, что текст выше других элементов */
+        }
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="history.back();">Back</button>
+    <div class="features-description">
+        <h1>How to use</h1>
+        <p>Loadsring Here</p>
+        <p>Function</p>
+    </div>
+    <div class="footer-text">© WaveFunctions 2024</div>
+</body>
+</html>
